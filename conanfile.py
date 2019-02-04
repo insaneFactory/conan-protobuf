@@ -18,6 +18,7 @@ class ProtobufConan(ConanFile):
     license = "BSD-3-Clause"
     exports = ["LICENSE.md"]
     exports_sources = ["CMakeLists.txt", "protobuf.patch"]
+    build_requires = "cmake_installer/3.12.1@conan/stable"
     generators = "cmake"
     settings = "os", "arch", "compiler", "build_type"
     short_paths = True
